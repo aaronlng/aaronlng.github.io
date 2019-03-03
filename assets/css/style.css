@@ -143,6 +143,11 @@ h3, .sidebar, h2 {
     margin-right: 0;
 }
 
+.connectLinks {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
 /*footer*/
 
 footer {
@@ -201,7 +206,7 @@ footer {
   .auth-image {
     float: left;
     width: 200px;
-    height: auto;
+    height: 200px;
     margin-top: 10px;
     margin-right: 25px;
   }
