@@ -24,81 +24,107 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">About <span
+                    <a class="nav-item nav-link" href="index.html">About</a>
+                    <a class="nav-item nav-link active" href="portfolio.html">Portfolio <span
                             class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
                     <a class="nav-item nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
         </nav>
-    </div>
-
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>Portfolio</h1>
-
-            <div class="work">
-                <img src="assets/images/hangman.jpg" class="auth-image" alt="hangman">
-                <a href="https://aaronlng.github.io/psychic-game/" target="_blank">
-                    <h3>Hangman</h3>
-                </a>
+        <div class="row">
+            <div class="col">
+                <h1>Portfolio</h1>
+                <div class="media">
+                    <img src="..." class="align-self-center mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Psychic Game</h5>
+                        <p>This is a basic psychic game consisting of a random letter being chosen by the computer and
+                            the user guessing which letter the computer chose. The user has 9 chances to guess the
+                            correct letter before they get a loss. If the guess the correct letter before the guesses
+                            run out, they win and their win total increases by 1. If they are unsuccessful, their losses
+                            go up by 1.</p>
+                        <p class="mb-0">You can access the game by clicking <a
+                                href="https://aaronlng.github.io/psychic-game/" target="_blank">here</a>, or see the
+                            code in my <a href="https://github.com/aaronlng/psychic-game" taget="_blank">Github
+                                Repo</a>.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-body">
+                        <h5 class="mt-0">Crystal Collector</h5>
+                        <p>This is a Crystal Collector game. The computer generates a random number. The crystals are
+                            each assigned to a number as well. When you click on a crystal it adds that respective
+                            number to your total score. The goal of the game is to match the number to the number the
+                            computer guessed. If you go over the number, you lose. Good Luck!</p>
+                        <p class="mb-0">You can access the game by clicking <a
+                                href="https://aaronlng.github.io/unit-4-game/" target="_blank">here</a>, or see the
+                            code in my <a href="https://github.com/aaronlng/unit-4-game" taget="_blank">Github
+                                Repo</a>.</p>
+                    </div>
+                    <img src="..." class="align-self-center mr-3" alt="...">
+                </div>
+                <div class="media">
+                    <img src="..." class="align-self-center mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Trivia Game</h5>
+                        <p>Test your knowledge at NBC's hit show "The Office" trivia! See if you're a Michael Scott or a
+                            Toby Flenderson.</p>
+                        <p class="mb-0">You can access the game by clicking <a
+                                href="https://aaronlng.github.io/TriviaGame/" target="_blank">here</a>, or see the
+                            code in my <a href="https://github.com/aaronlng/TriviaGame" taget="_blank">Github
+                                Repo</a>.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-body">
+                        <h5 class="mt-0">Train Schedule</h5>
+                        <p>This is a train schedule that utilizes firebase to real time update when the next train will
+                            arrive. I used moment.js to calculate when the next train will arrive and how many minutes
+                            away it is.</p>
+                        <p class="mb-0">You can access the game by clicking <a
+                                href="https://aaronlng.github.io/train-schedule/" target="_blank">here</a>, or see the
+                            code in my <a href="https://github.com/aaronlng/train-schedule" taget="_blank">Github
+                                Repo</a>.</p>
+                    </div>
+                    <img src="..." class="align-self-center mr-3" alt="...">
+                </div>
+                <div class="media">
+                    <img src="..." class="align-self-center mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Sports Giphy App</h5>
+                        <p>This is a project based on the Giphy API which allows the user to add a topic using the theme
+                            created and create a button using the form. Once the button is created you can click on the
+                            button and pull the top 10 gifs from Giphy to the web page. It will display the rating and
+                            when the icons are clicked on will start or stop the motion of the gif.</p>
+                        <p class="mb-0">You can access the game by clicking <a
+                                href="https://aaronlng.github.io/giftastic/" target="_blank">here</a>, or see the
+                            code in my <a href="https://github.com/aaronlng/giftastic" taget="_blank">Github
+                                Repo</a>.</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="work" id="rpg">
-                <img src="assets/images/rpg.jpg" class="auth-image" alt="RPG Game">
-                <a href="https://aaronlng.github.io/unit-4-game/" target="_blank">
-                    <h3>RPG Game</h3>
-                </a>
+            <div class="col">
+                <div class="card border-0 mt-3 mb-3 text-center" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <h5 class="card-title">Connect With Me</h5>
+                            </div>
+                            <a class="m-2" href="https://github.com/aaronlng" target="_blank"><img
+                                    src="assets/images/github.png" class="social" alt="Github"></a>
+                            <a class="m-2" href="https://www.linkedin.com/in/aaronlng/" target="_blank"><img
+                                    src="assets/images/linkedin.png" class="social" alt="LinkedIn"></a>
+                            <a class="m-2" href="#"><img src="assets/images/stackoverflow.png" class="social"
+                                    alt="Stack Overflow"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="work">
-                <img src="assets/images/trivia.jpg" class="auth-image" alt="Trivia Game">
-                <a href="https://aaronlng.github.io/TriviaGame/" target="_blank">
-                    <h3>Trivia Game</h3>
-                </a>
-            </div>
-
-            <div class="work" id="info">
-                <img src="assets/images/train.jpg" class="auth-image" alt="Train Schedule">
-                <a href="https://aaronlng.github.io/train-schedule/">
-                    <h3>Train Schedule</h3>
-                </a>
-            </div>
-
-            <div class="work">
-                <img src="assets/images/rockpaperscissors.jpg" class="auth-image" alt="Rock Paper Scissors">
-                <h3>Rock Paper Scissors</h3>
-            </div>
-
-            <div class="work">
-                <img src="assets/images/gif.png" class="auth-image" alt="giphy project">
-                <a href="https://aaronlng.github.io/giftastic/" target="_blank">
-                    <h3>Giphy API App</h3>
-                </a>
-            </div>
-
-
-        </section>
-
-        <section class="sidebar">
-            <div id="connect">
-                <h2>Connect with Me</h2>
-
-                <a class="connectLinks" href="https://github.com/aaronlng" target="_blank"><img
-                        src="assets/images/github.png" class="social" alt="Github"></a>
-                <a class="connectLinks" href="https://www.linkedin.com/in/aaronlng/" target="_blank"><img
-                        src="assets/images/linkedin.png" class="social" alt="LinkedIn"></a>
-                <img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow">
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            &copy; Copyright 2019 Aaron Long
         </div>
-    </footer>
-
+        <div class="row justify-content-center">
+            <footer class="mt-2 mb-2">&copy; Copyright 2019 Aaron Long</footer>
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
