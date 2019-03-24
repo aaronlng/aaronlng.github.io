@@ -1,6 +1,2 @@
 # responsive-portfolio
-
-##Things to work on 
-- put social links in nav bar aligned right
-- align menu items to left 
-- try taking the nav bar out of the container
+This is my portfolio of work showcasing assignments and projects up until this point in time. It utilizes bootstrap for styling as well as mobile responsiveness. 
