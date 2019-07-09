@@ -1,2 +1,23 @@
-# responsive-portfolio
-This is my portfolio of work showcasing assignments and projects up until this point in time. It utilizes bootstrap for styling as well as mobile responsiveness. 
+# Portfolio
+
+> Personal portfolio showcasing projects and contact information.
+
+## About Page
+
+![Portfolio Landing Page](assets/header.png)
+
+## Project Page
+
+![Portfolio Project Page](assets/header.png)
+
+## Contact Page
+
+![Portfolio Contact Page](assets/header.png)
+
+## Author
+
+### Aaron Long
+
+- [GitHub Profile](https://github.com/aaronlng/)
+
+- [@aaronlng](https://twitter.com/aaronlng)
