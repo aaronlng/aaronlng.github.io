@@ -4,15 +4,15 @@
 
 ## About Page
 
-![Portfolio Landing Page](assets/header.png)
+![Portfolio Landing Page](assets/about.png)
 
 ## Project Page
 
-![Portfolio Project Page](assets/header.png)
+![Portfolio Project Page](assets/portfolio.png)
 
 ## Contact Page
 
-![Portfolio Contact Page](assets/header.png)
+![Portfolio Contact Page](assets/contact.png)
 
 ## Author
 
