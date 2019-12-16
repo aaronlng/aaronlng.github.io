@@ -5,15 +5,15 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     background: url("../images/background.jpg") no-repeat top center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: auto 100%;
 }
 
 .grid-container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: rgba(255, 255, 255, 0.5);
     display: grid;
     grid-template-columns: 1fr;
@@ -86,7 +86,7 @@ body {
         "sub-head"
         "links";
     gap: 5px;
-    background: rgba(50, 50, 50, .3);
+    background-color: rgba(50, 50, 50, 0.3);
 }
 
 .about h2 {
@@ -133,4 +133,49 @@ i {
     color: #ffffff;
     z-index: 3;
     text-decoration: none;
+}
+
+/* Projects Section */
+
+.projects {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgba(50, 50, 50, 0.3);
+}
+
+.project-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .75fr .25fr;
+    grid-template-areas: 
+        "image"
+        "title";
+}
+
+.project-demo {
+    grid-area: image;
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+    align-self: start;
+}
+
+
+.project-block p {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background-color: rgb(50, 50, 50);
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+    font-size: 1.25em;
+    color: #ffffff;
+}
+
+.code {
+    color: rgb(50, 50, 50);
+    transition: color 0.3s ease-out;
 }
