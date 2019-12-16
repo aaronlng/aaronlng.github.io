@@ -24,3 +24,31 @@ body {
         "footer";
     gap: 5px;
 }
+
+/* Navigation */
+
+.main-nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "head menu";
+    gap: 5px;
+    align-items: center;
+}
+
+.main-nav ul {
+    text-decoration: none;
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-nav li:last-child {
+    margin-right: 0;
+}
