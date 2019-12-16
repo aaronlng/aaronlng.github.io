@@ -7,7 +7,8 @@ body {
     padding: 0;
     height: 100vh;
     background: url("../images/background.jpg") no-repeat top center;
-    background-size: cover;
+    background-attachment: scroll;
+    background-size: auto 100%;
 }
 
 .grid-container {
@@ -22,7 +23,6 @@ body {
         "about"
         "projects"
         "footer";
-    gap: 5px;
 }
 
 /* Navigation */
@@ -72,4 +72,65 @@ body {
 
 .main-nav a:hover {
     color: #979797;
+}
+
+/* About Section */
+
+.about {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .75fr auto 1fr;
+    grid-template-areas: 
+        "headline"
+        "sub-head"
+        "links";
+    gap: 5px;
+    background: rgba(50, 50, 50, .3);
+}
+
+.about h2 {
+    grid-area: headline;
+    justify-self: center;
+    align-self: end;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.about p {
+    grid-area: sub-head;
+    justify-self: center;
+    align-self: start;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.about ul {
+    justify-self: center;
+    align-self: start;
+    margin-top: 10px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.social-links a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #ffffff;
+    z-index: 3;
+    text-decoration: none;
 }
