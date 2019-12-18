@@ -109,14 +109,18 @@ body {
 }
 
 .about ul {
-    justify-self: center;
-    align-self: start;
-    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 10px auto;
+    flex-basis: .25em;
 }
 
 .social-links li {
     display: inline;
+    text-align: center;
     margin-right: 15px;
+    flex-grow: 2;
 }
 
 .social-links li:last-child {
