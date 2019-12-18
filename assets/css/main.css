@@ -138,17 +138,16 @@ i {
 /* Projects Section */
 
 .projects {
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     background-color: rgba(50, 50, 50, 0.3);
 }
 
 .project-block {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .75fr .25fr;
+    grid-template-columns: auto;
+    grid-template-rows: 75% 25%;
     grid-template-areas: 
         "image"
         "title";
@@ -157,7 +156,7 @@ i {
 .project-demo {
     grid-area: image;
     width: 100%;
-    max-width: 300px;
+    /* max-width: 400px; */
     justify-self: center;
     align-self: start;
 }
@@ -165,17 +164,45 @@ i {
 
 .project-block p {
     width: 100%;
-    max-width: 300px;
     height: 100%;
+    /* max-width: 400px; */
     background-color: rgb(50, 50, 50);
     justify-self: center;
     align-self: end;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: #ffffff;
 }
 
 .code {
     color: rgb(50, 50, 50);
     transition: color 0.3s ease-out;
+}
+
+/* Tablet Layout */
+
+@media screen and (min-width: 768px) {
+
+    /* Projects Section */
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        background-color: rgba(50, 50, 50, 0.3);
+    }
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 990px) {
+
+    /* Projects Section */
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: .25fr;
+        background-color: rgba(50, 50, 50, 0.3);
+    }
 }
