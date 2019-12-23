@@ -6,9 +6,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: url("../images/background.jpg") no-repeat top center;
+    background: url("../images/background.jpg") no-repeat left top;
     background-attachment: fixed;
-    background-size: auto 100%;
+    background-size: cover;
     font-family: "Overpass", sans-serif;
 }
 
@@ -33,7 +33,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "head menu";
     gap: 5px;
     align-items: end;
@@ -78,11 +78,12 @@ body {
 /* About Section */
 
 .about {
+    grid-area: about;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .75fr auto 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "headline"
         "sub-head"
         "links";
@@ -143,18 +144,18 @@ i {
 /* Projects Section */
 
 .projects {
+    grid-area: projects;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 100%);
     background-color: rgba(50, 50, 50, 0.3);
-    gap: 10px;
 }
 
 .project-block {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    grid-template-areas: 
+    grid-template-areas:
         "demo";
 }
 
@@ -249,16 +250,17 @@ i {
 }
 
 .overlay:hover {
-   opacity: 90%;
+    opacity: 90%;
 }
 
 /* Footer */
 
 #footer {
+    grid-area: footer;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "copyright links";
 }
 
@@ -281,11 +283,13 @@ i {
     /* Projects Section */
 
     .projects {
+        grid-area: projects;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100%;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 100%);
         background-color: rgba(50, 50, 50, 0.3);
     }
+
 }
 
 /* Desktop Layout */
@@ -295,8 +299,9 @@ i {
     /* Projects Section */
 
     .projects {
+        grid-area: projects;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, auto);
         grid-template-rows: 100%;
         background-color: rgba(50, 50, 50, 0.3);
     }
