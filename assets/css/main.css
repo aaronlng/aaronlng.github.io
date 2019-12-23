@@ -31,11 +31,13 @@ body {
 .main-nav {
     grid-area: nav;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
-        "head menu";
+        "head" 
+        "menu";
     gap: 5px;
+    justify-items: center;
     align-items: end;
     font-family: "Overpass", sans-serif;
     background: rgba(77, 77, 77, 0.75);
@@ -50,10 +52,9 @@ body {
 }
 
 .nav-options {
-    justify-self: end;
     align-self: end;
-    margin-right: 10px;
-    vertical-align: bottom;
+     /* justify-self: end; */
+    /* margin-right: 10px; */
 }
 
 .main-nav li {
@@ -279,6 +280,21 @@ i {
 /* Tablet Layout */
 
 @media screen and (min-width: 768px) {
+
+    /* Navigation */
+
+    .main-nav {
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "head menu";
+        gap: 5px;
+        align-items: end;
+        font-family: "Overpass", sans-serif;
+        background: rgba(77, 77, 77, 0.75);
+    }
 
     /* Projects Section */
 
