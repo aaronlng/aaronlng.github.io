@@ -4,7 +4,7 @@
 
 ## About Section
 
-![Portfolio Landing Section](assets/images/about.png)
+![Portfolio Landing Section](assets/images/about.PNG)
 
 ## Project Section
 
