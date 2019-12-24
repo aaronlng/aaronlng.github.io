@@ -2,93 +2,149 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>About Me</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Reset -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-complement.css">
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Roboto&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/62bfe3842b.js" crossorigin="anonymous"></script>
+    <!-- Page Icon -->
+    <link rel="icon" type="image/icon" href="assets/images/code.png">
+    <!-- Title -->
+    <title>Aaron Long</title>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <a class="navbar-brand" href="#">Aaron Long</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card border-0 mt-3 mb-3 text-center">
-                    <div class="row no-gutters">
-                        <div class="col-4">
-                            <img src="assets/images/bio-pic.jpg" class="card-img m-2 rounded-circle img-fluid"
-                                alt="bio-pic">
-                        </div>
-                        <div class="col">
-                            <div class="card-body">
-                                <h1 class="card-title">About Me</h1>
-                                <p class="card-text">Full stack developer with an in depth understanding of HTML, CSS,
-                                    and Javascript. My previous roles in customer service have shaped my strong
-                                    interpersonal relationship skills and elevated my comfort in regards to interacting
-                                    with people. High energy and positive presence bringing an abundance of enthusiasm
-                                    and creativity to projects and teamwork. Ability to juggle multiple tasks at once
-                                    while setting up priorities and delivering exceptional results to customer. Driven,
-                                    quick learner ready to take on the obstacles and challenges of a rapidly changing
-                                    industry. </p>
-                                <p class="card-text"><small class="text-muted">Last updated July 8, 2019</small></p>
-                            </div>
-                        </div>
+    <div class="grid-container">
+        <nav class="main-nav">
+            <h1 id="brand">@Aaronlng</h1>
+            <ul class="nav-options">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <section class="about" id="about">
+            <h2>Aaron Long</h2>
+            <p><em>Full Stack Web Developer</em></p>
+            <ul class="social-links">
+                <li><a href="https://github.com/aaronlng" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/aaronlng/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                <li><a href="https://twitter.com/aaronlng" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                </li>
+                <li><a href="mailto:aaronlng05@gmail.com" target="_blank"><i class="far fa-envelope"></i>Email</a></li>
+                <li><a href="https://drive.google.com/file/d/1YseoBpkUfLareOOy-8pnLox-zTSWFHBH/view" target="_blank"><i
+                            class="far fa-file-alt"></i>Resume</a></li>
+            </ul>
+            <a href="#projects" class="projects-button">&#8650;</a>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-block">
+                    <img src="assets/images/project-thumbs/google-books.gif" alt="Google Books Demo"
+                        class="project-demo">
+                    <div class="overlay">
+                        <p class="title">Google Books Search</p>
+                        <a href="https://aaron-google-books-search.herokuapp.com/" target="_blank"
+                            class="project-link"><button><span class="code">&lt;</span>Project<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <a href="https://github.com/aaronlng/google-books-search" target="_blank"
+                            class="code-link"><button><span class="code">&lt;</span>GitHub<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <p class="description">Search and save your favorite books with this MERN stack Google Books
+                            search app.</p>
+                    </div>
+                </div>
+                <div class="project-block">
+                    <img src="assets/images/project-thumbs/clicky-game.gif" alt="Clicky Game Demo" class="project-demo">
+                    <div class="overlay">
+                        <p class="title">Clicky Game App</p>
+                        <a href="https://www.aaronlng.dev/clicky-game/" target="_blank"
+                            class="project-link"><button><span class="code">&lt;</span>Project<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <a href="https://github.com/aaronlng/clicky-game" target="_blank"
+                            class="code-link"><button><span class="code">&lt;</span>GitHub<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <p class="description">Built using React, Clicky Game is a game to test your memory. Click on
+                            all the images only
+                            once. If an image is clicked on more than once, you lose!</p>
+                    </div>
+                </div>
+                <div class="project-block">
+                    <img src="assets/images/project-thumbs/scraper.gif" alt="Clicky Game Demo" class="project-demo">
+                    <div class="overlay">
+                        <p class="title">Mongo Scraper App</p>
+                        <a href="https://aaron-mongo-scraper.herokuapp.com/" target="_blank"
+                            class="project-link"><button><span class="code">&lt;</span>Project<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <a href="https://github.com/aaronlng/mongo-scraper" target="_blank"
+                            class="code-link"><button><span class="code">&lt;</span>GitHub<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <p class="description">A web scraper that pulls articles from the New York Times. Allows the
+                            user
+                            to save articles and add notes to those saved articles.</p>
+                    </div>
+                </div>
+                <div class="project-block">
+                    <img src="assets/images/project-thumbs/eat-da-burger.gif" alt="Eat-Da-Burger Demo"
+                        class="project-demo">
+                    <div class="overlay">
+                        <p class="title">Eat-Da-Burger</p>
+                        <a href="https://aaron-eat-da-burger.herokuapp.com/" target="_blank"
+                            class="project-link"><button><span class="code">&lt;</span>Project<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <a href="https://github.com/aaronlng/eat-da-burger" target="_blank"
+                            class="code-link"><button><span class="code">&lt;</span>GitHub<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <p class="description">Eat-Da-Burger! is a restaurant app that lets users input the names of
+                            burgers they'd like to eat.</p>
+                    </div>
+                </div>
+                <div class="project-block">
+                    <img src="assets/images/project-thumbs/survey-form.gif" alt="Responsive Survey Form"
+                        class="project-demo">
+                    <div class="overlay">
+                        <p class="title">Survey Form</p>
+                        <a href="https://www.aaronlng.dev/survey-form/" target="_blank"
+                            class="project-link"><button><span class="code">&lt;</span>Project<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <a href="https://github.com/aaronlng/survey-form" target="_blank"
+                            class="code-link"><button><span class="code">&lt;</span>GitHub<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <p class="description">Survey Form - from Free Code Camp's Responsive Web Design Projects</p>
+                    </div>
+                </div>
+                <div class="project-block">
+                    <img src="assets/images/project-thumbs/product-landing-page.gif" alt="Product Landing Page"
+                        class="project-demo">
+                    <div class="overlay">
+                        <p class="title">Product Landing Page</p>
+                        <a href="https://www.aaronlng.dev/product-landing-page/" target="_blank"
+                            class="project-link"><button><span class="code">&lt;</span>Project<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <a href="https://github.com/aaronlng/product-landing-page" target="_blank"
+                            class="code-link"><button><span class="code">&lt;</span>GitHub<span
+                                    class="code">&#47;&gt;</span></button></a>
+                        <p class="description">Product Landing Page - from Free Code Camp's Responsive Web Design
+                            Projects</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card border-0 mt-3 mb-3 text-center">
-                    <div class="row no-gutters">
-                        <div class="card-body">
-                            <div class="row justify-content-center">
-                                <h3 class="card-title">Connect With Me</h3>
-                            </div>
-                            <a class="m-2" href="https://github.com/aaronlng" target="_blank"><img
-                                    src="assets/images/github.png" class="social img-fluid" alt="Github"></a>
-                            <a class="m-2" href="https://www.linkedin.com/in/aaronlng/" target="_blank"><img
-                                    src="assets/images/linkedin.png" class="social img-fluid" alt="LinkedIn"></a>
-                            <a class="m-2" href="https://stackoverflow.com/users/10853142/aaron-long?tab=profile" target="_blank"><img
-                                    src="assets/images/stackoverflow.png" class="social img-fluid"
-                                    alt="Stack Overflow"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="text-center mb-3">&copy; Copyright 2019 Aaron Long</footer>
+        </section>
+        <footer id="footer">
+            <p>&copy; Aaron Long 2019</p>
+            <ul class="nav-options">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </footer>
     </div>
 </body>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
 
 </html>
