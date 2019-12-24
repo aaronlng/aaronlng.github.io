@@ -33,7 +33,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
-        "head" 
+        "head"
         "menu";
     gap: 5px;
     justify-items: center;
@@ -162,7 +162,7 @@ i {
 }
 
 .projects-button:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
 }
 
 /* Projects Section */
@@ -186,7 +186,6 @@ i {
     font-size: 2.5em;
     font-weight: bold;
     color: #ffffff;
-    background-color: rgba(50, 50, 50, 0.3);
 }
 
 .projects-container {
@@ -196,7 +195,6 @@ i {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(50, 50, 50, 0.3);
 }
 
 .project-block {
@@ -257,14 +255,12 @@ i {
     font-size: .65em;
     line-height: 1.5em;
     max-width: 350px;
-    /* font-style: oblique;  */
 }
 
 .project-link {
     grid-area: project;
     justify-self: end;
     align-self: center;
-    /* margin-top: 10px; */
     margin-right: 10px;
     text-decoration: none;
     color: #ffffff;
@@ -281,7 +277,6 @@ i {
     grid-area: code;
     justify-self: start;
     align-self: center;
-    /* margin-top: 10px; */
     margin-left: 10px;
     text-decoration: none;
 }
@@ -365,7 +360,7 @@ i {
 /* Special Social Links */
 
 @media screen and (min-width: 480px) {
-    
+
     .about ul {
         margin: 10px auto;
     }
@@ -420,7 +415,6 @@ i {
             "head"
             "content";
         height: inherit;
-        background-color: rgba(50, 50, 50, 0.3);
     }
 
     #projects h2 {
@@ -435,7 +429,6 @@ i {
         justify-content: center;
         align-items: flex-start;
         align-content: space-between;
-        background-color: rgba(50, 50, 50, 0.3);
     }
 
     .project-block {
@@ -453,7 +446,7 @@ i {
     .project-block:first-child {
         margin-top: 10px;
     }
-    
+
     .project-block:last-child {
         margin-bottom: 10px;
     }
@@ -465,11 +458,11 @@ i {
 @media screen and (min-width: 990px) {
 
     /* Navigation */
-    
+
     .main-nav {
         grid-area: nav;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
             "head menu";
@@ -491,12 +484,12 @@ i {
         margin-right: 10px;
     }
 
-     /* About Section */
+    /* About Section */
 
-     .about ul {
+    .about ul {
         margin: 10px auto;
     }
-    
+
     /* Projects Section */
 
     .projects {
@@ -508,6 +501,5 @@ i {
         justify-content: center;
         align-items: flex-start;
         align-content: space-between;
-        background-color: rgba(50, 50, 50, 0.3);
     }
 }
