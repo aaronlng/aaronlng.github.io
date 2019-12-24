@@ -166,7 +166,7 @@ i {
     grid-template-rows: 100%;
     grid-template-areas:
         "demo";
-    max-width: 400px;
+    max-width: 500px;
     justify-self: center;
     overflow: none;
     margin-top: 10px;
@@ -185,7 +185,6 @@ i {
     grid-area: demo;
     width: 100%;
     height: 100%;
-    /* max-width: 400px; */
     justify-self: center;
     align-self: start;
 }
@@ -348,10 +347,23 @@ i {
 
     .projects {
         grid-area: projects;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, 100%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
         background-color: rgba(50, 50, 50, 0.3);
+    }
+
+    .project-block {
+        flex-basis: 2em;
+        justify-self: center;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100%;
+        grid-template-areas:
+            "demo";
     }
 
 }
