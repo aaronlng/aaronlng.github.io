@@ -494,12 +494,13 @@ i {
 
     .projects {
         grid-area: projects;
+        min-height: 870px;
         display: flex;
         height: inherit;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
-        align-content: space-between;
+        align-content: flex-start;
     }
 }
