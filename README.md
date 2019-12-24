@@ -2,17 +2,13 @@
 
 > Personal portfolio showcasing projects and contact information.
 
-## About Page
+## About Section
 
-![Portfolio Landing Page](assets/images/about.PNG)
+![Portfolio Landing Section](assets/images/about.png)
 
-## Project Page
+## Project Section
 
-![Portfolio Project Page](assets/images/portfolio.PNG)
-
-## Contact Page
-
-![Portfolio Contact Page](assets/images/contact.PNG)
+![Portfolio Project Section](assets/images/projects.png)
 
 ## Author
 
