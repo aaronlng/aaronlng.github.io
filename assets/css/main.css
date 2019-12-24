@@ -151,6 +151,28 @@ i {
 
 .projects {
     grid-area: projects;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "head"
+        "content";
+    background-color: rgba(50, 50, 50, 0.3);
+}
+
+#projects h2 {
+    grid-area: head;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(50, 50, 50, 0.3);
+}
+
+.projects-container {
+    grid-area: content;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -362,6 +384,21 @@ i {
 
     .projects {
         grid-area: projects;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "head"
+            "content";
+        height: inherit;
+        background-color: rgba(50, 50, 50, 0.3);
+    }
+
+    #projects h2 {
+        width: 100%;
+    }
+
+    .projects-container {
         display: flex;
         height: inherit;
         flex-direction: row;
