@@ -348,22 +348,33 @@ i {
     .projects {
         grid-area: projects;
         display: flex;
+        height: inherit;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: stretch;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: space-between;
         background-color: rgba(50, 50, 50, 0.3);
     }
 
     .project-block {
-        flex-basis: 2em;
         justify-self: center;
+        min-width: 500px;
+        height: 250px;
         margin: 10px;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 100%;
         grid-template-areas:
             "demo";
+    }
+
+    .project-block:first-child {
+        margin-top: 10px;
+    }
+    
+    .project-block:last-child {
+        margin-bottom: 10px;
     }
 
 }
@@ -409,9 +420,13 @@ i {
 
     .projects {
         grid-area: projects;
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: 100%;
+        display: flex;
+        height: inherit;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: space-between;
         background-color: rgba(50, 50, 50, 0.3);
     }
 }
