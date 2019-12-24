@@ -54,8 +54,6 @@ body {
 .nav-options {
     grid-area: menu;
     align-self: end;
-     /* justify-self: end; */
-    /* margin-right: 10px; */
 }
 
 .main-nav li {
@@ -84,7 +82,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .75fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-areas:
         "headline"
         "sub-head"
@@ -113,9 +111,10 @@ body {
 
 .about ul {
     display: flex;
+    height: 55px;
     justify-content: space-evenly;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px 20px;
     flex-basis: .25em;
 }
 
@@ -124,6 +123,8 @@ body {
     text-align: center;
     margin-right: 15px;
     flex-grow: 2;
+    transition: transform .3s ease-out;
+
 }
 
 .social-links li:last-child {
@@ -139,8 +140,12 @@ i {
     font-size: 1.5em;
     font-weight: 400;
     color: #ffffff;
-    z-index: 3;
+    z-index: 10;
     text-decoration: none;
+}
+
+.social-links li:hover {
+    transform: translateY(10px);
 }
 
 /* Projects Section */
@@ -279,6 +284,16 @@ i {
     display: inline;
 }
 
+/* Special Social Links */
+
+@media screen and (min-width: 480px) {
+    
+    .about ul {
+        margin: 10px auto;
+    }
+
+}
+
 /* Tablet Layout */
 
 @media screen and (min-width: 768px) {
@@ -308,6 +323,12 @@ i {
         align-self: end;
         justify-self: end;
         margin-right: 10px;
+    }
+
+    /* About Section */
+
+    .about ul {
+        margin: 10px auto;
     }
 
     /* Projects Section */
@@ -351,6 +372,12 @@ i {
         align-self: end;
         justify-self: end;
         margin-right: 10px;
+    }
+
+     /* About Section */
+
+     .about ul {
+        margin: 10px auto;
     }
     
     /* Projects Section */
