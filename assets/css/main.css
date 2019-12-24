@@ -177,10 +177,6 @@ i {
     margin-top: 0px;
 }
 
-.project-block:last-child {
-    margin-bottom: 0px;
-}
-
 .project-demo {
     grid-area: demo;
     width: 100%;
@@ -277,23 +273,42 @@ i {
 
 #footer {
     grid-area: footer;
+    height: 25px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-template-areas:
         "copyright links";
+    background: rgba(77, 77, 77, 0.75);
 }
 
 #footer p {
     grid-area: copyright;
+    align-self: end;
+    color: #ffffff;
 }
 
 #footer ul {
     grid-area: links;
+    justify-self: end;
 }
 
 #footer li {
     display: inline;
+    margin-right: 10px;
+}
+
+#footer li:last-child {
+    margin-right: 0px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#footer a:hover {
+    color: #979797;
 }
 
 /* Special Social Links */
