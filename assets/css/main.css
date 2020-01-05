@@ -170,7 +170,7 @@ i {
 .projects {
     grid-area: projects;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "head"
