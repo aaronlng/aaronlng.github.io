@@ -170,11 +170,11 @@ i {
 .projects {
     grid-area: projects;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "head"
-        "content";
+        "items";
     background-color: rgba(50, 50, 50, 0.3);
 }
 
@@ -189,7 +189,7 @@ i {
 }
 
 .projects-container {
-    grid-area: content;
+    grid-area: items;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
