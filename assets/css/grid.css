@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    background: url("../images/background.jpg") no-repeat left top;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Overpass", sans-serif;
+}
+
+.grid-container {
+    background: rgba(255, 255, 255, 0.5);
+    display: grid;
+    min-width: 275px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(2, .5fr) auto;
+    grid-template-areas:
+        "nav"
+        "about"
+        "projects"
+        "footer";
+}
+
+/* Navigation */
+
+.main-nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "head"
+        "menu";
+    gap: 5px;
+    justify-items: center;
+    align-items: end;
+    font-family: "Overpass", sans-serif;
+    background: rgba(77, 77, 77, 0.75);
+}
