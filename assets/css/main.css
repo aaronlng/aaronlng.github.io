@@ -190,25 +190,21 @@ i {
 
 .projects-container {
     grid-area: items;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    gap: 5px;
 }
 
 .project-block {
-    flex-basis: 250px;
     display: grid;
-    grid-template-columns: auto;
+    max-width: 980px;
+    height: 300px;
+    grid-template-columns: 100%;
     grid-template-rows: 100%;
     grid-template-areas:
         "demo";
-    max-width: 500px;
-    justify-self: center;
-    overflow: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-items: center;
 }
 
 .project-block:first-child {
@@ -404,103 +400,55 @@ i {
         margin: 10px auto;
     }
 
-    /* Projects Section */
+    /* Desktop Layout */
 
-    .projects {
-        grid-area: projects;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-            "head"
-            "content";
-        height: inherit;
-    }
+    @media screen and (min-width: 990px) {
 
-    #projects h2 {
-        width: 100%;
-    }
+        /* Navigation */
 
-    .projects-container {
-        display: flex;
-        height: inherit;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        align-content: space-between;
-    }
+        .main-nav {
+            grid-area: nav;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "head menu";
+            gap: 5px;
+            align-items: end;
+            font-family: "Overpass", sans-serif;
+            background: rgba(77, 77, 77, 0.75);
+        }
 
-    .project-block {
-        justify-self: center;
-        min-width: 500px;
-        height: 250px;
-        margin: 10px;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 100%;
-        grid-template-areas:
-            "demo";
-    }
+        #brand {
+            grid-area: head;
+            justify-self: start;
+        }
 
-    .project-block:first-child {
-        margin-top: 10px;
-    }
+        .nav-options {
+            grid-area: menu;
+            align-self: end;
+            justify-self: end;
+            margin-right: 10px;
+        }
 
-    .project-block:last-child {
-        margin-bottom: 10px;
-    }
+        /* About Section */
 
-}
+        .about ul {
+            margin: 10px auto;
+        }
 
-/* Desktop Layout */
+        /* Projects Section */
 
-@media screen and (min-width: 990px) {
-
-    /* Navigation */
-
-    .main-nav {
-        grid-area: nav;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "head menu";
-        gap: 5px;
-        align-items: end;
-        font-family: "Overpass", sans-serif;
-        background: rgba(77, 77, 77, 0.75);
-    }
-
-    #brand {
-        grid-area: head;
-        justify-self: start;
-    }
-
-    .nav-options {
-        grid-area: menu;
-        align-self: end;
-        justify-self: end;
-        margin-right: 10px;
-    }
-
-    /* About Section */
-
-    .about ul {
-        margin: 10px auto;
-    }
-
-    /* Projects Section */
-
-    .projects {
-        grid-area: projects;
-        min-height: 870px;
-        display: flex;
-        height: inherit;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        align-content: flex-start;
+        .projects {
+            grid-area: projects;
+            min-height: 870px;
+            display: flex;
+            height: inherit;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
     }
 }
