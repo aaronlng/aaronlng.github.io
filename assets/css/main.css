@@ -14,8 +14,8 @@ body {
 
 .grid-container {
     background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
     display: grid;
-    min-width: 320px;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
@@ -400,6 +400,14 @@ i {
         margin: 10px auto;
     }
 
+    /* Projects Section */
+
+    .project-block {
+        max-width: 700px;
+        align-self: center;
+        justify-self: center;
+    }
+
     /* Desktop Layout */
 
     @media screen and (min-width: 990px) {
@@ -451,6 +459,12 @@ i {
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(4, auto);
             gap: 5px;
+        }
+
+        .project-block {
+            max-width: 700px;
+            align-self: center;
+            justify-self: center;
         }
     }
 }
