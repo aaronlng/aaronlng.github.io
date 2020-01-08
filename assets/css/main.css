@@ -190,25 +190,21 @@ i {
 
 .projects-container {
     grid-area: items;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    gap: 5px;
 }
 
 .project-block {
-    flex-basis: 250px;
     display: grid;
-    grid-template-columns: auto;
+    max-width: 980px;
+    height: 300px;
+    grid-template-columns: 100%;
     grid-template-rows: 100%;
     grid-template-areas:
         "demo";
-    max-width: 500px;
-    justify-self: center;
-    overflow: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-items: center;
 }
 
 .project-block:first-child {
@@ -403,55 +399,6 @@ i {
     .about ul {
         margin: 10px auto;
     }
-
-    /* Projects Section */
-
-    .projects {
-        grid-area: projects;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-            "head"
-            "content";
-        height: inherit;
-    }
-
-    #projects h2 {
-        width: 100%;
-    }
-
-    .projects-container {
-        display: flex;
-        height: inherit;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        align-content: space-between;
-    }
-
-    .project-block {
-        justify-self: center;
-        min-width: 500px;
-        height: 250px;
-        margin: 10px;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 100%;
-        grid-template-areas:
-            "demo";
-    }
-
-    .project-block:first-child {
-        margin-top: 10px;
-    }
-
-    .project-block:last-child {
-        margin-bottom: 10px;
-    }
-
-}
 
 /* Desktop Layout */
 
