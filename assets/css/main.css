@@ -441,14 +441,16 @@ i {
 
         .projects {
             grid-area: projects;
-            min-height: 870px;
-            display: flex;
-            height: inherit;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            align-content: flex-start;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;          
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(4, auto);
+            gap: 5px;
         }
     }
 }
