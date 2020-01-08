@@ -400,54 +400,55 @@ i {
         margin: 10px auto;
     }
 
-/* Desktop Layout */
+    /* Desktop Layout */
 
-@media screen and (min-width: 990px) {
+    @media screen and (min-width: 990px) {
 
-    /* Navigation */
+        /* Navigation */
 
-    .main-nav {
-        grid-area: nav;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "head menu";
-        gap: 5px;
-        align-items: end;
-        font-family: "Overpass", sans-serif;
-        background: rgba(77, 77, 77, 0.75);
-    }
+        .main-nav {
+            grid-area: nav;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "head menu";
+            gap: 5px;
+            align-items: end;
+            font-family: "Overpass", sans-serif;
+            background: rgba(77, 77, 77, 0.75);
+        }
 
-    #brand {
-        grid-area: head;
-        justify-self: start;
-    }
+        #brand {
+            grid-area: head;
+            justify-self: start;
+        }
 
-    .nav-options {
-        grid-area: menu;
-        align-self: end;
-        justify-self: end;
-        margin-right: 10px;
-    }
+        .nav-options {
+            grid-area: menu;
+            align-self: end;
+            justify-self: end;
+            margin-right: 10px;
+        }
 
-    /* About Section */
+        /* About Section */
 
-    .about ul {
-        margin: 10px auto;
-    }
+        .about ul {
+            margin: 10px auto;
+        }
 
-    /* Projects Section */
+        /* Projects Section */
 
-    .projects {
-        grid-area: projects;
-        min-height: 870px;
-        display: flex;
-        height: inherit;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        align-content: flex-start;
+        .projects {
+            grid-area: projects;
+            min-height: 870px;
+            display: flex;
+            height: inherit;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
     }
 }
