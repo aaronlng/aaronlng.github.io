@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 320px;
     background: url("../images/background.jpg") no-repeat left top;
     background-attachment: fixed;
     background-size: cover;
@@ -14,9 +13,8 @@ body {
 
 .grid-container {
     background: rgba(255, 255, 255, 0.5);
-    width: 100vw;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
         "nav"
@@ -30,7 +28,7 @@ body {
 .main-nav {
     grid-area: nav;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "head"
