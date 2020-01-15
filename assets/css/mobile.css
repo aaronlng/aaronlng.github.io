@@ -1,0 +1,30 @@
+@media screen and (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background: url("../images/background.jpg") no-repeat left top;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: "Overpass", sans-serif;
+    }
+
+    .grid-container {
+        background: rgba(255, 255, 255, 0.5);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(50px, auto) 1fr 1fr auto;
+        grid-template-areas:
+            "nav"
+            "about"
+            "projects"
+            "footer";
+    }
+
+    /* Navigation */
+
+
+}
