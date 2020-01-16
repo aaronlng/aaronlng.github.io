@@ -77,4 +77,18 @@
 
     /* About */
     
+    .about {
+        grid-area: about;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr auto auto 1fr;
+        grid-template-areas:
+            "headline"
+            "sub-head"
+            "links"
+            "button";
+        gap: 5px;
+        background-color: rgba(50, 50, 50, 0.3);
+    }
 }
