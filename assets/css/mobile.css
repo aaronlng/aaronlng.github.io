@@ -26,5 +26,55 @@
 
     /* Navigation */
 
+    .main-nav {
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "head"
+            "menu";
+        gap: 5px;
+        justify-items: center;
+        align-items: end;
+        font-family: "Overpass", sans-serif;
+        background: rgba(77, 77, 77, 0.75);
+        min-width: 250px;
+    }
 
+    #brand {
+        grid-area: head;
+        margin: 10px;
+        margin-bottom: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .nav-options {
+        grid-area: menu;
+        align-self: end;
+    }
+    
+    .main-nav li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .main-nav li:last-child {
+        margin-right: 0;
+    }
+    
+    .main-nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+    
+    .main-nav a:hover {
+        color: #979797;
+    }
+
+    /* About */
+    
 }
