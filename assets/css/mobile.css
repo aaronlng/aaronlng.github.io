@@ -91,4 +91,77 @@
         gap: 5px;
         background-color: rgba(50, 50, 50, 0.3);
     }
+
+    .about h2 {
+        grid-area: headline;
+        justify-self: center;
+        align-self: end;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .about p {
+        grid-area: sub-head;
+        justify-self: center;
+        align-self: start;
+        font-size: 1.5em;
+        font-style: italic;
+        color: #ffffff;
+    }
+    
+    .about ul {
+        display: flex;
+        height: 55px;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 10px 20px;
+        flex-basis: .25em;
+    }
+    
+    .social-links li {
+        display: inline;
+        text-align: center;
+        margin-right: 15px;
+        flex-grow: 2;
+        transition: transform .3s ease-out;
+    
+    }
+    
+    .social-links li:last-child {
+        margin-right: 0;
+    }
+    
+    i {
+        margin-right: 5px;
+    }
+    
+    .social-links a {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .social-links li:hover {
+        transform: translateY(10px);
+    }
+    
+    .projects-button {
+        border: 3px solid #ffffff;
+        padding: 15px 15px;
+        border-radius: 75%;
+        background: none;
+        align-self: start;
+        justify-self: center;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #ffffff;
+        transition: transform .3s ease-out;
+    }
+    
+    .projects-button:hover {
+        transform: scale(1.1, 1.1);
+    }
 }
