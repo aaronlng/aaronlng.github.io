@@ -79,7 +79,7 @@
     
     .about {
         grid-area: about;
-        height: 100vh;
+        width: 100vw;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 1fr auto auto 1fr;
