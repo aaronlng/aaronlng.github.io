@@ -27,8 +27,44 @@
     }
 
     /* Navigation Section */
+    .main-nav {
+        display: grid;
+        grid-template-areas:
+            "title"
+            "links";
+        min-width: 250px;
+        max-height: 100px;
+    }
 
+    #brand {
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+        font-size: 3em;
+        color: #ffffff;
+    }
+
+    .nav-options {
+        grid-area: links;
+        justify-self: center;
+        align-self: center;
+        display: grid;
+        grid-template-areas: 
+            "about projects";
+        gap: 30px;
+    }
+
+    .nav-options li {
+        display: inline;
+        justify-self: center;
+        align-self: center;
+    }   
     
+    .nav-options a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5em;
+    }
 
     /* Projects Section */
 
