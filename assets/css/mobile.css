@@ -66,6 +66,29 @@
         font-size: 1.5em;
     }
 
+    /* About Section */
+
+    #about {
+        grid-area: about;
+        display: grid;
+        grid-template-areas:
+            "title"
+            "subtitle"
+            "links"
+            "button";
+        min-width: 250px;
+        height: 100vh;
+    }
+
+    #title {
+        grid-area: title;
+        font-size: 2em;
+        color: #ffffff;
+        align-self: center;
+        justify-self: center;
+    }
+
+
     /* Projects Section */
 
     .project-block {
