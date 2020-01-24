@@ -71,6 +71,7 @@
     #about {
         grid-area: about;
         display: grid;
+        grid-template-rows: 1fr auto auto 1fr;
         grid-template-areas:
             "title"
             "subtitle"
@@ -84,10 +85,64 @@
         grid-area: title;
         font-size: 2em;
         color: #ffffff;
+        align-self: end;
+        justify-self: center;
+    }
+
+    #subtitle {
+        grid-area: subtitle;
+        font-size: 1em;
+        color: #ffffff;
         align-self: center;
         justify-self: center;
     }
 
+    .social-links {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .social-links li {
+        display: inline;
+        font-size: 1.5em;
+    }
+
+    .social-links a {
+        color: #ffffff;
+
+    }
+
+    .social-text {
+        display: none;
+    }
+
+    .fab,
+    .far {
+        transition: transform .3s ease-out;
+    }
+
+    .fab:hover,
+    .far:hover {
+        transform: translateY(10px);
+    }
+
+    .projects-button {
+        border: 3px solid #ffffff;
+        padding: 15px 15px;
+        margin-top: 50px;
+        border-radius: 50%;
+        background: none;
+        align-self: start;
+        justify-self: center;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #ffffff;
+        transition: transform .3s ease-out;
+    }
+    
+    .projects-button:hover {
+        transform: scale(1.1, 1.1);
+    }
 
     /* Projects Section */
 
