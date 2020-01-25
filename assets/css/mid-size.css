@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1024px) {
     * {
         box-sizing: border-box;
     }
@@ -15,7 +15,7 @@
     }
 
     .grid-container {
-        background: rgba(200, 200, 200, 0.4);
+        background: rgba(50, 50, 50, 0.4);
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: minmax(50px, auto) repeat(2, auto) minmax(30px, auto);
@@ -31,33 +31,30 @@
     .main-nav {
         display: grid;
         grid-template-areas:
-            "title"
-            "links";
+            "title links";
         min-width: 250px;
         max-height: 100px;
     }
 
     #brand {
         grid-area: title;
-        justify-self: center;
-        align-self: center;
+        justify-self: start;
+        align-self: end;
         font-size: 3em;
         color: #ffffff;
         margin-top: 20px;
+        margin-left: 10px;
     }
 
     .nav-options {
         grid-area: links;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 100%;
-        margin-top: 10px;
+        justify-self: end;
+        align-self: end;
     }
 
     .main-nav-item {
         display: inline;
-        justify-self: center;
-        align-self: center;
+        margin-right: 10px;
     }
 
     .nav-options a {
@@ -67,7 +64,6 @@
     }
 
     .nav-options a:hover {
-        color: #aaaaaa;
         text-decoration: underline;
     }
 
@@ -123,9 +119,10 @@
         font-size: 1.5em;
     }
 
-    .social-links {
+    .social-link {
         color: #ffffff;
         text-decoration: none;
+        transition: transform .3s ease-out;
     }
 
     .social-text {
@@ -133,17 +130,6 @@
         text-decoration: none;
         margin-left: 3px;
         margin-right: 5px;
-    }
-
-    .social-item,
-    .fab,
-    .far {
-        transition: transform .3s ease-out;
-    }
-
-    .fab:hover,
-    .far:hover {
-        transform: translateY(10px);
     }
 
     .projects-button {
@@ -158,6 +144,10 @@
         text-decoration: none;
         color: #ffffff;
         transition: transform .3s ease-out;
+    }
+
+    .social-link:hover {
+        text-decoration: underline;
     }
 
     .projects-button:hover {
@@ -188,8 +178,9 @@
     }
 
     .project-block {
-        width: 100vw;
+        width: 100%;
         height: auto;
+        max-width: 600px;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: minmax(30px, auto) auto minmax(30px, auto);
@@ -197,7 +188,9 @@
             "title"
             "image"
             "buttons";
-        background: rgba(48, 46, 46, 0.685);
+        background: rgba(30, 30, 30, 0.8);
+        justify-self: center;
+        align-self: center;
     }
 
     .title {
@@ -210,8 +203,9 @@
 
     .project-demo {
         grid-area: image;
-        width: 100vw;
+        width: 100%;
         height: auto;
+        max-width: 600px;
     }
 
     .project-buttons {
@@ -223,9 +217,17 @@
         align-items: center;
     }
 
+    .code {
+        color: rgba(30, 30, 30, 0.8);
+    }
+
     .project-link,
     .code-link {
         text-decoration: none;
+        color: #ffffff;
+    }
+    .project-link:hover .code,
+    .code-link:hover .code {
         color: #ffffff;
     }
 
@@ -244,6 +246,7 @@
         justify-self: start;
         align-self: end;
         margin-bottom: 3px;
+        margin-left: 10px;
     }
 
     .nav-options-footer {
@@ -261,5 +264,9 @@
         color: #ffffff;
         font-size: 1em;
         margin-right: 10px;
+    }
+
+    .nav-options-footer a:hover {
+        text-decoration: underline;
     }
 }
