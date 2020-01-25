@@ -1,11 +1,10 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1024px) {
+
     * {
         box-sizing: border-box;
     }
 
     body {
-        width: 100%;
-        height: 100%;
         margin: 0;
         padding: 0;
         background: url("../images/background.jpg") no-repeat left top;
@@ -15,10 +14,10 @@
     }
 
     .grid-container {
-        background: rgba(50, 50, 50, .4);
+        background: rgba(50, 50, 50, 0.4);
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: minmax(50px, auto) repeat(2, auto) minmax(30px, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "nav"
             "about"
@@ -31,39 +30,40 @@
     .main-nav {
         display: grid;
         grid-template-areas:
-            "title"
-            "links";
+            "title links";
         min-width: 250px;
         max-height: 100px;
     }
 
     #brand {
         grid-area: title;
-        justify-self: center;
-        align-self: center;
+        justify-self: start;
+        align-self: end;
         font-size: 3em;
         color: #ffffff;
         margin-top: 20px;
+        margin-left: 10px;
     }
 
     .nav-options {
         grid-area: links;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 100%;
-        margin-top: 10px;
+        justify-self: end;
+        align-self: end;
     }
 
     .main-nav-item {
         display: inline;
-        justify-self: center;
-        align-self: center;
+        margin-right: 10px;
     }
 
     .nav-options a {
         text-decoration: none;
         color: #ffffff;
         font-size: 1.5em;
+    }
+
+    .nav-options a:hover {
+        text-decoration: underline;
     }
 
     /* About Section */
@@ -85,6 +85,7 @@
     #bio-pic {
         width: 50%;
         height: auto;
+        max-width: 300px;
         margin-top: 20px;
         margin-bottom: 10px;
         justify-self: center;
@@ -112,18 +113,22 @@
         justify-self: center;
     }
 
-    .social-links li {
+    .social-item {
         display: inline;
         font-size: 1.5em;
     }
 
-    .social-links a {
+    .social-link {
         color: #ffffff;
-
+        text-decoration: none;
+        transition: transform .3s ease-out;
     }
 
     .social-text {
-        display: none;
+        font-size: .75em;
+        text-decoration: none;
+        margin-left: 3px;
+        margin-right: 5px;
     }
 
     .projects-button {
@@ -138,6 +143,10 @@
         text-decoration: none;
         color: #ffffff;
         transition: transform .3s ease-out;
+    }
+
+    .social-link:hover {
+        text-decoration: underline;
     }
 
     .projects-button:hover {
@@ -162,14 +171,15 @@
 
     #projects-container {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(7, auto);
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, auto);
         gap: 10px;
     }
 
     .project-block {
-        width: 100vw;
+        width: 100%;
         height: auto;
+        max-width: 600px;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: minmax(30px, auto) auto minmax(30px, auto);
@@ -192,8 +202,9 @@
 
     .project-demo {
         grid-area: image;
-        width: 100vw;
+        width: 100%;
         height: auto;
+        max-width: 600px;
     }
 
     .project-buttons {
@@ -205,9 +216,17 @@
         align-items: center;
     }
 
+    .code {
+        color: rgba(30, 30, 30, 0.8);
+    }
+
     .project-link,
     .code-link {
         text-decoration: none;
+        color: #ffffff;
+    }
+    .project-link:hover .code,
+    .code-link:hover .code {
         color: #ffffff;
     }
 
@@ -226,7 +245,7 @@
         justify-self: start;
         align-self: end;
         margin-bottom: 3px;
-        margin-left: 5px;
+        margin-left: 10px;
     }
 
     .nav-options-footer {
@@ -244,5 +263,9 @@
         color: #ffffff;
         font-size: 1em;
         margin-right: 10px;
+    }
+
+    .nav-options-footer a:hover {
+        text-decoration: underline;
     }
 }
