@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
     * {
         box-sizing: border-box;
     }
@@ -66,6 +66,11 @@
         font-size: 1.5em;
     }
 
+    .nav-options a:hover {
+        color: #aaaaaa;
+        text-decoration: underline;
+    }
+
     /* About Section */
 
     #about {
@@ -85,6 +90,7 @@
     #bio-pic {
         width: 50%;
         height: auto;
+        max-width: 300px;
         margin-top: 20px;
         margin-bottom: 10px;
         justify-self: center;
@@ -112,23 +118,32 @@
         justify-self: center;
     }
 
-    .social-links li {
+    .social-item {
         display: inline;
         font-size: 1.5em;
     }
 
-    .social-links a {
+    .social-links {
         color: #ffffff;
-
+        text-decoration: none;
     }
 
     .social-text {
-        display: none;
+        font-size: .75em;
+        text-decoration: none;
+        margin-left: 3px;
+        margin-right: 5px;
     }
 
-    .fab:visited,
-    .far:visited {
-        color: rgb(48, 46, 46);
+    .social-item,
+    .fab,
+    .far {
+        transition: transform .3s ease-out;
+    }
+
+    .fab:hover,
+    .far:hover {
+        transform: translateY(10px);
     }
 
     .projects-button {
