@@ -2,13 +2,17 @@
 
 > Personal portfolio showcasing projects and contact information.
 
-## About Section
+## Mobile Portfolio
 
-![Portfolio Landing Section](assets/images/about.PNG)
+![Mobile About](assets/images/readme/mobile-about.png) ![Mobile Projects](assets/images/readme/mobile-projects.png)
 
-## Project Section
+## Mid-sized Screen Portfolio
 
-![Portfolio Project Section](assets/images/projects.png)
+![Tablet About](assets/images/readme/tablet-about.png) ![Tablet Projects](assets/images/readme/tablet-projects.png)
+
+## Desktop Portfolio
+
+![Desktop About](assets/images/readme/desktop-about.png) ![Desktop Projects](assets/images/readme/desktop-projects.png)
 
 ## Author
 
