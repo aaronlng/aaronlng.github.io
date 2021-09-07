@@ -7,9 +7,9 @@
     body {
         margin: 0;
         padding: 0;
-        background: url("../images/background.jpg") no-repeat left top;
+        /* background: url("../images/background.jpg") no-repeat left top;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: cover; */
         font-family: "Overpass", sans-serif;
     }
 
@@ -17,7 +17,7 @@
         background: rgba(50, 50, 50, 0.4);
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(4, 100vh);
         grid-template-areas:
             "nav"
             "about"
@@ -27,43 +27,19 @@
 
     /* Navigation Section */
 
-    .main-nav {
-        display: grid;
-        grid-template-areas:
-            "title links";
-        min-width: 250px;
-        max-height: 100px;
+    .main-navigation{
+        
     }
 
-    #brand {
-        grid-area: title;
-        justify-self: start;
-        align-self: end;
-        font-size: 3em;
-        color: #ffffff;
-        margin-top: 20px;
-        margin-left: 10px;
-    }
-
-    .nav-options {
-        grid-area: links;
-        justify-self: end;
-        align-self: end;
+    .main-nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: flex-start;
     }
 
     .main-nav-item {
-        display: inline;
-        margin-right: 10px;
-    }
 
-    .nav-options a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 1.5em;
-    }
-
-    .nav-options a:hover {
-        text-decoration: underline;
     }
 
     /* About Section */
