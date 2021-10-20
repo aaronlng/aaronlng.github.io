@@ -20,19 +20,23 @@
 /* Navigation */
 .main-nav {
     grid-area: navigation;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     position: sticky;
     top: 0;
     left: 0;
     background: #333333;
 }
 
+#hamburger-icon {
+    color: #ffffff;
+    padding-right: 20px;
+}
+
 .nav-options {
     list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 90vw;
-    padding: 10px;
+    display: block;
 }
 
 .main-nav-items a {
@@ -86,4 +90,24 @@
     font-size: 1.5em;
     font-weight: 400;
 }
+
+#projects img {
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    grid-area: footer;
+    display: flex;
+}
+
+.nav-options-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-item {
+    list-style: none;
+}
+
 };
