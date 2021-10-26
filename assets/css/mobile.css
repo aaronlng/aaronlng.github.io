@@ -15,7 +15,6 @@
 .main-nav {
     /* border: 2px solid black; */
     height: 50px;
-    background: #e3e3e3;
 }
 
 .main-nav-list {
@@ -38,8 +37,79 @@
 
 /* About */
 #about {
-    height: 90vh;
+    height: 100vh;
     align-items: center;
+    margin: 0 10px;
+}
+
+#about h3 {
+    padding-top: 12em;
+    font-size: 1.5em;
+}
+
+#about h1 {
+    padding: .15em 0;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+#about h2 {
+    font-size: 1.5em;
+}
+
+#about p {
+    padding-top: .15em;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+/* Projects */
+#projects {
+    height: auto;
+}
+
+#projects h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.project-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.project-blocks {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+#copyright {
+    font-size: .75em;
+}
+
+.nav-options-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.footer-item {
+    font-size: .75em;
+}
+
+.footer-item a {
+    padding: 10px;
+    text-decoration: none;
+    color: navy;
+    font-size: .75em;
 }
 
 }
